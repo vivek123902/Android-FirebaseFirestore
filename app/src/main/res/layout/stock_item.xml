@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCatagoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/ListItemText"
+            tools:text="Name : Cha ni bhuki(vagh bakri)"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvQty"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/ListItemText"
+            tools:text="Qty : 10 kg"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/ListItemText"
+            tools:text="Price : 1200"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/ListItemText"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            tools:text="Date : 1-1-2024"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

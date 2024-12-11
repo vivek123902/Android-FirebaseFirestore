@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="આજ ની આવક અને ખર્ચ નાખો"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ilIncomeinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="આજ ની આવક"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etIncome"
+            style="@style/EditTextStyle"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ilExpenseinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="આજ નો ખર્ચો"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etExpense"
+            style="@style/EditTextStyle"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etDate"
+        style="@style/EditTextStyle"
+        android:layout_width="374dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/rounded_border"
+        android:hint="Select Date here"
+        android:padding="15dp" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddIncomeExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ઉમેરો"
+        style="@style/ButtonStyle"/>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Dwarkadhish Tea</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_floors_available">No Floors Available</string>
+    <string name="no_office_available">No Office Available</string>
+    <string name="add_office">Add Office</string>
+    <string name="please_add_office_number">Please Add Office Number</string>
+    <string name="enter_office_number">Enter office number</string>
+    <string name="please_add_floor_name">Please Add Floor Name</string>
+    <string name="enter_floor_number">Enter floor number</string>
+    <string name="add_floor">Add Floor</string>
+    <string name="no_stock_available">No Stock Available</string>
+    <string name="add_category">Add Category</string>
+    <string name="stock_manage">માલ નો હિસાબ</string>
+    <string name="tea_office_management">ચા નો હિસાબ</string>
+    <string name="add_tea">Add Tea</string>
+    <string name="monthly_tea_count">આ મહિના ની ચા : </string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="success_tea_added">Tea added!</string>
+    <string name="previous_management_text">અગાડના હિસાબ જોવા માટે દબાવો</string>
+    <string name="tea_manage_label">ઓફિસ ની ચા</string>
+    <string name="office_management_label">ઓફિસ નું લિસ્ટ</string>
+    <string name="floor_management_label">માળ નું લિસ્ટ</string>
+    <string name="stock_management_label">સ્ટોક નો  હિસાબ</string>
+    <string name="category_added_successfully">Category added successfully</string>
+    <string name="please_select_category">Please enter category!</string>
+    <string name="enter_date">Please select date!</string>
+    <string name="enter_price">Please enter price!</string>
+    <string name="enter_qty">Please enter price!</string>
+    <string name="stock_deleted_successfully">Stock deleted!</string>
+    <string name="income_expense">આવક/ખર્ચ</string>
+    <string name="emp_management">કારીગરો નો હિસાબ</string>
+</resources>

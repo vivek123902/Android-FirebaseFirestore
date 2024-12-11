@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.stock.ui.AddStockFragment">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/llSelectCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/spCategory"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/llQty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Qty"
+        app:layout_constraintEnd_toEndOf="@+id/llSelectCat"
+        app:layout_constraintStart_toStartOf="@+id/llSelectCat"
+        app:layout_constraintTop_toBottomOf="@+id/llSelectCat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etQty"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ilPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Price"
+        app:layout_constraintEnd_toEndOf="@+id/llQty"
+        app:layout_constraintStart_toStartOf="@+id/llQty"
+        app:layout_constraintTop_toBottomOf="@+id/llQty">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPrice"
+            style="@style/EditTextStyle"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etDate"
+        style="@style/EditTextStyle"
+        android:layout_width="374dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/rounded_border"
+        android:hint="Select Date here"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/ilPrice"
+        app:layout_constraintStart_toStartOf="@+id/ilPrice"
+        app:layout_constraintTop_toBottomOf="@+id/ilPrice" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddStock"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_category"
+        app:layout_constraintEnd_toEndOf="@+id/etDate"
+        app:layout_constraintStart_toStartOf="@+id/etDate"
+        app:layout_constraintTop_toBottomOf="@+id/etDate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

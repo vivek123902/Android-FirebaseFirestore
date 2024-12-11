@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/splashFragment"
+    android:id="@+id/nav">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dwarkadhish.tea.presentation.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_stockFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:destination="@id/stockFragment"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_floorFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:destination="@id/floorFragment"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_incomeExpenseFragment"
+            app:destination="@id/incomeExpenseFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.dwarkadhish.tea.presentation.splash.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/incomeExpenseFragment"
+        android:name="com.dwarkadhish.tea.presentation.incomeExpense.ui.IncomeExpenseFragment"
+        android:label="IncomeExpense"
+        tools:layout="@layout/fragment_income_expense">
+
+    </fragment>
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="com.dwarkadhish.tea.presentation.employeeManagement.ui.EmployeeFragment"
+        android:label="EmpManagement"
+        tools:layout="@layout/fragment_employe">
+
+        <action
+            android:id="@+id/action_employeeFragment_to_empSalaryManagement"
+            app:destination="@id/empSalaryManagement"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/empSalaryManagement"
+        android:name="com.dwarkadhish.tea.presentation.employeeManagement.ui.EmpSalaryFragment"
+        android:label="EmpSalary"
+        tools:layout="@layout/fragment_emp_salary">
+
+    </fragment>
+    <fragment
+        android:id="@+id/stockFragment"
+        android:name="com.dwarkadhish.tea.presentation.stock.ui.StockFragment"
+        android:label="Stock"
+        tools:layout="@layout/fragment_stock">
+        <action
+            android:id="@+id/action_stockFragment_to_addStockFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:destination="@id/AddStockFragment"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/floorFragment"
+        android:name="com.dwarkadhish.tea.presentation.officemanagement.ui.AddFloorManagement"
+        android:label="Home"
+        tools:layout="@layout/fragment_add_floor_management">
+        <action
+            android:id="@+id/action_floorFragment_to_officeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:destination="@id/officeFragment"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/AddStockFragment"
+        android:name="com.dwarkadhish.tea.presentation.stock.ui.AddStockFragment"
+        android:label="Stock"
+        tools:layout="@layout/fragment_add_stock">
+
+    </fragment>
+    <fragment
+        android:id="@+id/officeFragment"
+        android:name="com.dwarkadhish.tea.presentation.officemanagement.ui.AddOfficeManagement"
+        android:label="Office"
+        tools:layout="@layout/fragment_add_office_management">
+        <action
+            android:id="@+id/action_officeFragment_to_teaManagement"
+            app:enterAnim="@anim/slide_in_right"
+            app:destination="@id/teaManagement"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/teaManagement"
+        android:name="com.dwarkadhish.tea.presentation.teamanagement.TeaManagementFragment"
+        android:label="Tea"
+        tools:layout="@layout/fragment_tea_management">
+
+    </fragment>
+</navigation>
